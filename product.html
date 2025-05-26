@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title></title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="header_min_menu">
+                <a href="#">Главная</a>
+                <a href="">О компании</a>
+                <a href="#">Акции</a>
+                <a href="#">Оплата</a>
+                <a href="#">Доставка</a>
+                <a href="#">Контакты</a>
+            </div>
+            <div class="container">
+                <div class="box">
+                    <div class="header__map">
+                        <img src="img/map.svg" alt="">
+                        <p>г. Сургут</p>
+                    </div>
+                    <ul class="header__navbar">
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a href="">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#">Акции</a>
+                        </li>
+                        <li>
+                            <a href="#">Оплата</a>
+                        </li>
+                        <li>
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                        <button class="btn_open_menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </ul>
+                    <div class="header__right">
+                        <a href="tomail:moikisurgut@mail.ru" class="email">
+                            <img src="img/email.svg" alt="">
+                            <p>moikisurgut@mail.ru</p>
+                        </a>
+                        <a href="tel:8 999 887 85 45" class="phone">
+                            <span></span>
+                            <p>8 999 887 85 45</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="box">
+                    <a href="#" class="header__logo">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                    <button class="header__catalog_btn">
+                        <span class="open">
+                            <img src="img/catalog-btn.svg" alt="">
+                        </span>
+                        <span class="close">
+                            <img src="img/catalog-btn-close.svg " alt="">
+                        </span>
+                        <p>Каталог</p>
+                    </button>
+                    <button class="open_search">
+                        <img src="img/search-icon.svg" alt="">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.4844 27.3137L4.68543 7.51472C3.90435 6.73364 3.90435 5.46735 4.68539 4.68632C5.46642 3.90529 6.73275 3.90524 7.51383 4.68632L27.3129 24.4853C28.0939 25.2664 28.0939 26.5327 27.3129 27.3138C26.5318 28.0949 25.2655 28.0948 24.4844 27.3137Z" fill="#fff"/>
+                            <path d="M27.3131 7.51468L7.51411 27.3137C6.73302 28.0947 5.46674 28.0947 4.68571 27.3137C3.90468 26.5327 3.90463 25.2663 4.68571 24.4853L24.4847 4.68623C25.2658 3.9052 26.5321 3.90515 27.3132 4.68623C28.0943 5.46732 28.0942 6.7336 27.3131 7.51468Z" fill="#fff"/>
+                        </svg>                            
+                    </button>
+                    <form action="" class="header__search">
+                        <input class="input" type="text" placeholder="Поиск...">
+                        <button class="btn">
+                            <img src="img/search-icon.svg" alt="">
+                        </button>
+                    </form>
+                    <div class="header__cart">
+                        <button class="btn">
+                            <p>корзина</p>
+                            <div class="img">
+                                <img src="img/basket.svg" alt="">
+                                <span>5</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="catalog_menu">
+                    <div class="catalog_menu_block">
+                        <div class="catalog_menu_box">
+                            <div class="block_item">
+                                <h5><a href="#">Кухонные мойки</a></h5>
+                                <div class="items">
+                                    <a href="#">Искусственный камень</a>
+                                    <a href="#">Нержавеющая сталь</a>
+                                    <a href="#">Глянцевые</a>
+                                    <a href="#">Матовые</a>
+                                </div>
+                            </div>
+                            <div class="block_item">
+                                <h5><a href="#">Смесители</a></h5>
+                                <div class="catalog_open">
+                                    <p>Показать все</p>
+                                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.60996 0.399037L5.72996 4.27903L1.84996 0.399037C1.45996 0.00903697 0.829961 0.00903697 0.439961 0.399037C0.049961 0.789036 0.049961 1.41904 0.439961 1.80904L5.02996 6.39903C5.41996 6.78903 6.04996 6.78903 6.43996 6.39903L11.03 1.80904C11.42 1.41904 11.42 0.789036 11.03 0.399037C10.64 0.0190369 9.99996 0.00903697 9.60996 0.399037Z" fill="#9195A7"/>
+                                    </svg>
+                                </div>
+                                <div class="items">
+                                    <a href="#">Для раковин</a>
+                                    <a href="#">Для кухни</a>
+                                    <a href="#">Для душа</a>
+                                    <a href="#">Для биде</a>
+                                    <a href="#">Для биде</a>
+                                    <a href="#">Для биде</a>
+                                    <a href="#">Для биде</a>
+                                </div>
+                            </div>
+                            <div class="block_item">
+                                <h5><a href="#">Раковины</a></h5>
+                                <div class="items">
+                                    <a href="#">На тумбу</a>
+                                    <a href="#">Над стиральной машиной</a>
+                                </div>
+                            </div>
+                            <div class="block_item">
+                                <h5><a href="#">Полотенцесушители</a></h5>
+                                <div class="items">
+                                    <a href="#">На тумбу</a>
+                                    <a href="#">Над стиральной машиной</a>
+                                </div>
+                            </div>
+                            <div class="block_item">
+                                <h5><a href="#">Аксессуары</a></h5>
+                                <div class="catalog_open">
+                                    <p>Показать все</p>
+                                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.60996 0.399037L5.72996 4.27903L1.84996 0.399037C1.45996 0.00903697 0.829961 0.00903697 0.439961 0.399037C0.049961 0.789036 0.049961 1.41904 0.439961 1.80904L5.02996 6.39903C5.41996 6.78903 6.04996 6.78903 6.43996 6.39903L11.03 1.80904C11.42 1.41904 11.42 0.789036 11.03 0.399037C10.64 0.0190369 9.99996 0.00903697 9.60996 0.399037Z" fill="#9195A7"/>
+                                    </svg>
+                                </div>
+                                <div class="items">
+                                    <a href="#">Сиденья для ванн</a>
+                                    <a href="#">Светильники для ванной комнаты</a>
+                                    <a href="#">Держатели для зубных щеток</a>
+                                    <a href="#">Держатели для фена</a>
+                                    <a href="#">Дозаторы</a>
+                                    <a href="#">Сиденья для ванн</a>
+                                    <a href="#">Держатели для фена</a>
+                                    <a href="#">Дозаторы</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile_menu">
+        <div class="mobile_menu__box">
+            <a href="#" class="mobile_menu__logo">
+                <img src="img/mobile-logo.svg" alt="">
+            </a>
+            <button class="mobile_menu__catalog">
+                <img src="img/mobile-catalog.svg" alt="">
+            </button>
+            <a href="#" class="mobile_menu__cart">
+                <img src="img/basket.svg" alt="">
+                <span>5</span>
+            </a>
+            <button class="mobile_menu__burgir">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+    <main class="main">
+        <section class="product">
+            <div class="container">
+                <div class="crumbs">
+                    <div class="crumbs__box">
+                        <a href="#">Главная</a>
+                        <img src="img/crumbs.svg" alt="">
+                        <a href="#">Каталог</a>
+                        <img src="img/crumbs.svg" alt="">
+                        <a href="#">Кухонные мойки</a>
+                        <img src="img/crumbs.svg" alt="">
+                        <p>Кухонная мойка GranFest Practic 42*42 гранитная крошка черная</p>
+                    </div>
+                </div>
+                <h2 class="h2">Кухонная мойка GranFest Practic 42*42 гранитная крошка черная</h2>
+                <div class="product__box">
+                    <div class="product__img">
+                        <div class="product__slick">
+                            <div class="slick__block">
+                                <div class="img">
+                                    <img src="img/1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slick__block">
+                                <div class="img">
+                                    <img src="img/1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slick__block">
+                                <div class="img">
+                                    <img src="img/1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slick__block">
+                                <div class="img">
+                                    <img src="img/1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slick__block">
+                                <div class="img">
+                                    <img src="img/1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slick__block">
+                                <div class="img">
+                                    <img src="img/1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__nav">
+                            <div class="slick__block">
+                                <div class="img">
+                                    <img src="img/1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slick__block">
+                                <div class="img">
+                                    <img src="img/1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slick__block">
+                                <div class="img">
+                                    <img src="img/1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slick__block">
+                                <div class="img">
+                                    <img src="img/1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slick__block">
+                                <div class="img">
+                                    <img src="img/1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slick__block">
+                                <div class="img">
+                                    <img src="img/1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__content">
+                        <h3 class="price">4 200 ₽</h3>
+                        <button class="btn">
+                            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M29.5 8.75V20.75V30.75C29.5 31.75 28.8333 32 28.5 32H18.25H3.75C3.05963 32 2.5 31.4404 2.5 30.75V8.75C2.5 8.05962 3.05963 7.5 3.75 7.5H7.55912C8.05569 3.28269 11.6514 0 16 0C20.3486 0 23.9443 3.28269 24.4409 7.5H28.25C28.9404 7.5 29.5 8.05962 29.5 8.75ZM27 10V20.75V29.5H18.25H5V10H7.5V13.75C7.5 14.4404 8.05963 15 8.75 15C9.44037 15 10 14.4404 10 13.75V10H22V13.75C22 14.4404 22.5596 15 23.25 15C23.9404 15 24.5 14.4404 24.5 13.75V10H27ZM16 2.5C18.9677 2.5 21.4387 4.66594 21.9162 7.5H10.0838C10.5613 4.66594 13.0323 2.5 16 2.5Z" fill="#fff"/>
+                            </svg>                                
+                            В корзину</button>
+                        <div class="colors">
+                            <h6>Выберите цвет</h6>
+                            <div class="radio black">
+                                <label for="1">
+                                    <input type="radio" name="colors" id="1">
+                                    <div class="icon"></div>
+                                </label>
+                                <span>черный</span>
+                            </div>
+                            <div class="radio beige">
+                                <label for="2">
+                                    <input type="radio" name="colors" id="2">
+                                    <div class="icon"></div>
+                                </label>
+                                <span>белый</span>
+                            </div>
+                            <div class="radio silver">
+                                <label for="3">
+                                    <input type="radio" name="colors" id="3">
+                                    <div class="icon"></div>
+                                </label>
+                                <span>серый</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__description">
+                    <div class="description_btn">
+                        <button class="btn active" id="description_btn1">Описание</button>
+                        <button class="btn" id="description_btn2">Характеристики</button>
+                        <button class="btn" id="description_btn3">Доставка и оплата</button>
+                    </div>
+                    <div class="descrioption_block show" id="descrioption_block1">
+                        <p>Отличная мойка из композитного материала имеет глубокую и квадратную чашу. Кварцевый песок, полученный путем естественного дробления, смешивается с полимерными добавками, что придает модели особую прочность и долговечность. У мойки безупречный вид и идеально гладкая поверхность. И в таком состоянии кварцевая модель будет пребывать на протяжении всего длительного срока эксплуатации.</p>
+                        <p>Композитный материал гарантирует защиту бархатистой поверхности от бытовых моющих средств. На кварцевой поверхности не появляются сколы, трещины и царапины, изделие отлично перенесет температурные перепады.</p>
+                        <p>Богатая цветовая гамма поможет подобрать мойку TOLERO R-111 для любого кухонного гарнитура. Оптимальные размеры квадратной мойки способствуют удачному размещению в помещении любого размера.</p>
+                    </div>
+                    <div class="descrioption_block" id="descrioption_block2">
+                        <p>Отличная мойка из композитного материала имеет глубокую и квадратную чашу. Кварцевый песок, полученный путем естественного дробления, смешивается с полимерными добавками, что придает модели особую прочность и долговечность. У мойки безупречный вид и идеально гладкая поверхность. И в таком состоянии кварцевая модель будет пребывать на протяжении всего длительного срока эксплуатации.</p>
+                        <p>Композитный материал гарантирует защиту бархатистой поверхности от бытовых моющих средств. На кварцевой поверхности не появляются сколы, трещины и царапины, изделие отлично перенесет температурные перепады.</p>
+                        <p>Богатая цветовая гамма поможет подобрать мойку TOLERO R-111 для любого кухонного гарнитура. Оптимальные размеры квадратной мойки способствуют удачному размещению в помещении любого размера.</p>
+                        <p>Богатая цветовая гамма поможет подобрать мойку TOLERO R-111 для любого кухонного гарнитура. Оптимальные размеры квадратной мойки способствуют удачному размещению в помещении любого размера.</p>
+                    </div>
+                    <div class="descrioption_block" id="descrioption_block3">
+                        <p>Отличная мойка из композитного материала имеет глубокую и квадратную чашу. Кварцевый песок, полученный путем естественного дробления, смешивается с полимерными добавками, что придает модели особую прочность и долговечность. У мойки безупречный вид и идеально гладкая поверхность. И в таком состоянии кварцевая модель будет пребывать на протяжении всего длительного срока эксплуатации.</p>
+                        <p>Композитный материал гарантирует защиту бархатистой поверхности от бытовых моющих средств. На кварцевой поверхности не появляются сколы, трещины и царапины, изделие отлично перенесет температурные перепады.</p>
+                        <p>Композитный материал гарантирует защиту бархатистой поверхности от бытовых моющих средств. На кварцевой поверхности не появляются сколы, трещины и царапины, изделие отлично перенесет температурные перепады.</p>
+                        <p>Богатая цветовая гамма поможет подобрать мойку TOLERO R-111 для любого кухонного гарнитура. Оптимальные размеры квадратной мойки способствуют удачному размещению в помещении любого размера.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stock product_stock">
+            <div class="container">
+                <div class="h2_title">
+                    <h2>Cопутствующие товары</h2>
+                </div>
+                <div class="catalog__slider">
+                    <div class="catalog__block">
+                        <a href="#" class="catalog__item">
+                            <div class="catalog__status status_stock">
+                                акция
+                            </div>
+                            <div class="catalog__img">
+                                <div class="img">
+                                    <img src="img/catalog1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="price">
+                                    <h5><span>4 200</span> ₽</h5>
+                                    <h6>5 290</h6>
+                                    <button class="btn_cart">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_305_1773)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.125 7.13037V16.1304V23.6304C22.125 24.3804 21.625 24.5679 21.375 24.5679H13.6875H2.8125C2.29472 24.5679 1.875 24.1482 1.875 23.6304V7.13037C1.875 6.61259 2.29472 6.19287 2.8125 6.19287H5.66934C6.04177 3.02989 8.73858 0.567871 12 0.567871C15.2614 0.567871 17.9582 3.02989 18.3307 6.19287H21.1875C21.7053 6.19287 22.125 6.61259 22.125 7.13037ZM20.25 8.06787V16.1304V22.6929H13.6875H3.75V8.06787H5.625V10.8804C5.625 11.3982 6.04472 11.8179 6.5625 11.8179C7.08028 11.8179 7.5 11.3982 7.5 10.8804V8.06787H16.5V10.8804C16.5 11.3982 16.9197 11.8179 17.4375 11.8179C17.9553 11.8179 18.375 11.3982 18.375 10.8804V8.06787H20.25ZM12 2.44287C14.2258 2.44287 16.079 4.06732 16.4371 6.19287H7.56286C7.92098 4.06732 9.77423 2.44287 12 2.44287Z" fill="#FAFAFA"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_305_1773">
+                                            <rect width="24" height="24" fill="white" transform="translate(0 0.567871)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <p class="title">
+                                    Кухонная мойка GranFest Practic 42*42 гранитная крошка черная
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog__block">
+                        <a href="#" class="catalog__item">
+                            <div class="catalog__status status_stock">
+                                акция
+                            </div>
+                            <div class="catalog__img">
+                                <div class="img">
+                                    <img src="img/catalog1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="price">
+                                    <h5><span>4 200</span> ₽</h5>
+                                    <h6>5 290</h6>
+                                    <button class="btn_cart">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_305_1773)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.125 7.13037V16.1304V23.6304C22.125 24.3804 21.625 24.5679 21.375 24.5679H13.6875H2.8125C2.29472 24.5679 1.875 24.1482 1.875 23.6304V7.13037C1.875 6.61259 2.29472 6.19287 2.8125 6.19287H5.66934C6.04177 3.02989 8.73858 0.567871 12 0.567871C15.2614 0.567871 17.9582 3.02989 18.3307 6.19287H21.1875C21.7053 6.19287 22.125 6.61259 22.125 7.13037ZM20.25 8.06787V16.1304V22.6929H13.6875H3.75V8.06787H5.625V10.8804C5.625 11.3982 6.04472 11.8179 6.5625 11.8179C7.08028 11.8179 7.5 11.3982 7.5 10.8804V8.06787H16.5V10.8804C16.5 11.3982 16.9197 11.8179 17.4375 11.8179C17.9553 11.8179 18.375 11.3982 18.375 10.8804V8.06787H20.25ZM12 2.44287C14.2258 2.44287 16.079 4.06732 16.4371 6.19287H7.56286C7.92098 4.06732 9.77423 2.44287 12 2.44287Z" fill="#FAFAFA"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_305_1773">
+                                            <rect width="24" height="24" fill="white" transform="translate(0 0.567871)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <p class="title">
+                                    Кухонная мойка GranFest Practic 42*42 гранитная крошка черная
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog__block">
+                        <a href="#" class="catalog__item">
+                            <div class="catalog__status status_stock">
+                                акция
+                            </div>
+                            <div class="catalog__img">
+                                <div class="img">
+                                    <img src="img/catalog1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="price">
+                                    <h5><span>4 200</span> ₽</h5>
+                                    <h6>5 290</h6>
+                                    <button class="btn_cart">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_305_1773)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.125 7.13037V16.1304V23.6304C22.125 24.3804 21.625 24.5679 21.375 24.5679H13.6875H2.8125C2.29472 24.5679 1.875 24.1482 1.875 23.6304V7.13037C1.875 6.61259 2.29472 6.19287 2.8125 6.19287H5.66934C6.04177 3.02989 8.73858 0.567871 12 0.567871C15.2614 0.567871 17.9582 3.02989 18.3307 6.19287H21.1875C21.7053 6.19287 22.125 6.61259 22.125 7.13037ZM20.25 8.06787V16.1304V22.6929H13.6875H3.75V8.06787H5.625V10.8804C5.625 11.3982 6.04472 11.8179 6.5625 11.8179C7.08028 11.8179 7.5 11.3982 7.5 10.8804V8.06787H16.5V10.8804C16.5 11.3982 16.9197 11.8179 17.4375 11.8179C17.9553 11.8179 18.375 11.3982 18.375 10.8804V8.06787H20.25ZM12 2.44287C14.2258 2.44287 16.079 4.06732 16.4371 6.19287H7.56286C7.92098 4.06732 9.77423 2.44287 12 2.44287Z" fill="#FAFAFA"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_305_1773">
+                                            <rect width="24" height="24" fill="white" transform="translate(0 0.567871)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <p class="title">
+                                    Кухонная мойка GranFest Practic 42*42 гранитная крошка черная
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog__block">
+                        <a href="#" class="catalog__item">
+                            <div class="catalog__status status_stock">
+                                акция
+                            </div>
+                            <div class="catalog__img">
+                                <div class="img">
+                                    <img src="img/catalog1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="price">
+                                    <h5><span>4 200</span> ₽</h5>
+                                    <h6>5 290</h6>
+                                    <button class="btn_cart">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_305_1773)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.125 7.13037V16.1304V23.6304C22.125 24.3804 21.625 24.5679 21.375 24.5679H13.6875H2.8125C2.29472 24.5679 1.875 24.1482 1.875 23.6304V7.13037C1.875 6.61259 2.29472 6.19287 2.8125 6.19287H5.66934C6.04177 3.02989 8.73858 0.567871 12 0.567871C15.2614 0.567871 17.9582 3.02989 18.3307 6.19287H21.1875C21.7053 6.19287 22.125 6.61259 22.125 7.13037ZM20.25 8.06787V16.1304V22.6929H13.6875H3.75V8.06787H5.625V10.8804C5.625 11.3982 6.04472 11.8179 6.5625 11.8179C7.08028 11.8179 7.5 11.3982 7.5 10.8804V8.06787H16.5V10.8804C16.5 11.3982 16.9197 11.8179 17.4375 11.8179C17.9553 11.8179 18.375 11.3982 18.375 10.8804V8.06787H20.25ZM12 2.44287C14.2258 2.44287 16.079 4.06732 16.4371 6.19287H7.56286C7.92098 4.06732 9.77423 2.44287 12 2.44287Z" fill="#FAFAFA"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_305_1773">
+                                            <rect width="24" height="24" fill="white" transform="translate(0 0.567871)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <p class="title">
+                                    Кухонная мойка GranFest Practic 42*42 гранитная крошка черная
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog__block">
+                        <a href="#" class="catalog__item">
+                            <div class="catalog__status status_stock">
+                                акция
+                            </div>
+                            <div class="catalog__img">
+                                <div class="img">
+                                    <img src="img/catalog1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="price">
+                                    <h5><span>4 200</span> ₽</h5>
+                                    <h6>5 290</h6>
+                                    <button class="btn_cart">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_305_1773)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.125 7.13037V16.1304V23.6304C22.125 24.3804 21.625 24.5679 21.375 24.5679H13.6875H2.8125C2.29472 24.5679 1.875 24.1482 1.875 23.6304V7.13037C1.875 6.61259 2.29472 6.19287 2.8125 6.19287H5.66934C6.04177 3.02989 8.73858 0.567871 12 0.567871C15.2614 0.567871 17.9582 3.02989 18.3307 6.19287H21.1875C21.7053 6.19287 22.125 6.61259 22.125 7.13037ZM20.25 8.06787V16.1304V22.6929H13.6875H3.75V8.06787H5.625V10.8804C5.625 11.3982 6.04472 11.8179 6.5625 11.8179C7.08028 11.8179 7.5 11.3982 7.5 10.8804V8.06787H16.5V10.8804C16.5 11.3982 16.9197 11.8179 17.4375 11.8179C17.9553 11.8179 18.375 11.3982 18.375 10.8804V8.06787H20.25ZM12 2.44287C14.2258 2.44287 16.079 4.06732 16.4371 6.19287H7.56286C7.92098 4.06732 9.77423 2.44287 12 2.44287Z" fill="#FAFAFA"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_305_1773">
+                                            <rect width="24" height="24" fill="white" transform="translate(0 0.567871)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <p class="title">
+                                    Кухонная мойка GranFest Practic 42*42 гранитная крошка черная
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__box">
+                <div class="footer__block">
+                    <h5>Компания</h5>
+                    <a href="#">О компании</a>
+                    <a href="#">Акции</a>
+                    <a href="#">Оплата</a>
+                    <a href="#">Доставка</a>
+                    <a href="#">Отзывы</a>
+                    <a href="#">Контакты</a>
+                </div>
+                <div class="footer__block">
+                    <h5>Каталог</h5>
+                    <a href="#">Смесители</a>
+                    <a href="#">Кухонные мойки</a>
+                    <a href="#">Полотенцесушители</a>
+                    <a href="#">Раковины</a>
+                </div>
+                <div class="footer__block">
+                    <h5>Обратная связь</h5>
+                    <a href="tel:8 (800) 551-21-55"><img src="img/phone.svg" alt=""> 8 (800) 551-21-55</a>
+                    <p><img src="img/time.svg" alt=""> Пп-Вс:  с 9:00 до 20:00</p>
+                    <a href="tomail:moikisurgut@mail.ru"><img src="img/email.svg" alt=""> moikisurgut@mail.ru</a>
+                </div>
+                <div class="footer__block">
+                    <h5>Наши соц.сети</h5>
+                    <div class="footer__soc">
+                        <a href="#">
+                            <img src="img/in.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/fb.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="left">
+                    <p>© 2021 г.  moikisurgut.ru</p>
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+                <div class="right">
+                    <div>
+                        <a href="#">Создание сайтов</a>
+                        <a href="#">Продвижение сайтов</a>
+                    </div>
+                    <img src="img/kontur.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $('.product__slick').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.product__nav',
+            responsive: [
+                {
+                breakpoint: 767,
+                settings: {
+                    dots: true,
+                }
+                },
+            ]
+        });
+        $('.product__nav').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            asNavFor: '.product__slick',
+            dots: false,
+            arrows: false,
+            focusOnSelect: true,
+            responsive: [
+                {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 3,
+                }
+                },
+            ]
+        });
+        $('.catalog__slider').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: false,
+            arrow: true,
+            responsive: [
+                {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 2.2,
+                    arrows: false
+                }
+                },
+                {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1.8,
+                    arrows: false
+                }
+                },
+            ]
+        });
+    </script>
+</body>
+</html>
